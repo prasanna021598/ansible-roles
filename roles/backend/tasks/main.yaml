@@ -18,7 +18,7 @@
 
 - name: downloading the artifact from nexus
   ansible.builtin.get_url:
-    url: i will give this url later
+    url: http://54.226.47.181:8081/repository/backend-expense/
     dest: /tmp/backend.zip
 
 - name: unzipping the code in application directory
@@ -29,7 +29,7 @@
 
 - name: downloading the required dependencies
   ansible.builtin.command: npm install
-  args:
+  args: 
     chdir: /app
 
 - name: installing mysql
