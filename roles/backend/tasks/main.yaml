@@ -16,9 +16,9 @@
     path: /app
     state: directory
 
-- name: downloading the code from the given url
+- name: downloading the artifact from nexus
   ansible.builtin.get_url:
-    url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
+    url: 
     dest: /tmp/backend.zip
 
 - name: unzipping the code in application directory
