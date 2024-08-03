@@ -18,7 +18,7 @@
 
 - name: downloading the artifact from nexus
   ansible.builtin.get_url:
-    url: 
+    url: i will give this url later
     dest: /tmp/backend.zip
 
 - name: unzipping the code in application directory
