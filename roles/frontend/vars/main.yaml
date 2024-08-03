@@ -1,2 +1,2 @@
-backendhost: backend-expense.ilovedevops.fun
-backendload: backend-alb.ilovedevops.fun
+backendhost: backend-expense.itindustry.online
+backendload: backend-alb.itindustry.online

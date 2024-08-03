@@ -5,7 +5,7 @@
 
 - name: downloading the code from the given url
   ansible.builtin.get_url:
-    url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
+    url: http://54.226.47.181:8081/repository/backend-expense/
     dest: /tmp/backend.zip
 
 - name: unzipping the code in application directory
@@ -32,7 +32,7 @@
 - name: unzipping the contents to the original location
 
   ansible.builtin.unarchive:
-    src: https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
+    src: http://54.226.47.181:8081/repository/frontend-expense/
     dest: /usr/share/nginx/html
     remote_src: yes
 
