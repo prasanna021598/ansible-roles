@@ -18,7 +18,7 @@
 
 - name: downloading the artifact from nexus
   ansible.builtin.get_url:
-    url: http://54.226.47.181:8081/repository/backend-expense/com/expense/backend/backend-.zip
+    url: http://54.226.36.164:8081/repository/backend-expense/com/expense/backend/backend-.zip
     dest: /tmp/backend-.zip
 
 - name: unzipping the code in application directory
