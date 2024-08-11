@@ -27,10 +27,10 @@
     dest: /app
     remote_src: yes
 
-- name: downloading the required dependencies
-  ansible.builtin.command: npm install
-  args: 
-    chdir: /app
+# - name: downloading the required dependencies
+#   ansible.builtin.command: npm install
+#   args: 
+#     chdir: /app
 
 - name: installing mysql
   ansible.builtin.dnf:
